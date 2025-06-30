@@ -34,3 +34,10 @@ addButton.addEventListener('click', () => {
         renderTodos();
     }
 });
+
+// Allow adding todo with Enter key
+todoInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        addButton.click();
+    }
+});
