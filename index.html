@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+    <div class="absolute top-4 right-4 z-10">
+        <div id="flag-selector" class="flex items-center gap-2">
+            <img src="images/Flag_of_the_United_Kingdom_(3-5).svg.png" alt="UK Flag" data-lang="en" class="w-6 h-6 cursor-pointer rounded shadow border-2 border-transparent" />
+            <img src="images/Flag_of_Romania.svg.png" alt="Romania Flag" data-lang="ro" class="w-6 h-6 cursor-pointer rounded shadow border-2 border-transparent" />
+            <img src="images/Flag_of_Denmark.svg.png" alt="Denmark Flag" data-lang="da" class="w-6 h-6 cursor-pointer rounded shadow border-2 border-transparent" />
+        </div>
+    </div>
     <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
-        <h1 class="text-2xl font-bold mb-4 text-center">Todo App</h1>
-        <input type="text-area" id="todo-input" placeholder="Add a new todo" class="border border-gray-300 p-2 w-full rounded mb-4">
-        <button id="add-todo" class="bg-blue-500 text-white p-2 rounded w-full">Add Todo</button>
+        <h1 class="text-2xl font-bold mb-4 text-center" data-i18n="title">Todo App</h1>
+        <input type="text-area" id="todo-input" placeholder="Add a new todo" class="border border-gray-300 p-2 w-full rounded mb-4" data-i18n-placeholder="input_placeholder">
+        <button id="add-todo" class="bg-blue-500 text-white p-2 rounded w-full" data-i18n="add_todo">Add Todo</button>
         <ul id="todo-list" class="mt-4"></ul>
     </div>
     <script src="scripts/main.js"></script>
