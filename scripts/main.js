@@ -79,18 +79,24 @@ function renderTodos() {
     const lang = localStorage.getItem('preferredLanguage') || 'en';
     todos.forEach((todo, index) => {
         const todoItem = document.createElement('li');
-        todoItem.textContent = todo;
-        todoItem.classList.add('p-2', 'border-b', 'border-gray-300');
-        
+        todoItem.classList.add('p-2', 'border-b', 'border-gray-300', 'flex', 'flex-col', 'items-start', 'gap-1');
+
         const deleteButton = document.createElement('button');
+
         deleteButton.textContent = translations[lang].delete;
-        deleteButton.classList.add('ml-2', 'text-red-500');
+        deleteButton.classList.add('text-red-500', 'self-end', 'mb-1');
+
         deleteButton.onclick = () => {
             todos.splice(index, 1);
             renderTodos();
         };
 
+        const todoText = document.createElement('span');
+        todoText.textContent = todo;
+        todoText.classList.add('block', 'w-full', 'break-words', 'whitespace-pre-line', 'max-w-full');
+
         todoItem.appendChild(deleteButton);
+        todoItem.appendChild(todoText);
         todoList.appendChild(todoItem);
     });
 }
