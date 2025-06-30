@@ -1,1 +1,26 @@
-/* This file is intentionally left blank. */
+.todo-item {
+    cursor: move;
+    transition: all 0.2s ease;
+}
+
+.todo-item:hover {
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.todo-item.dragging {
+    opacity: 0.5;
+    transform: rotate(5deg);
+}
+
+.todo-item.drag-over {
+    border-top: 3px solid #3b82f6;
+}
+
+.drag-handle {
+    cursor: grab;
+}
+
+.drag-handle:active {
+    cursor: grabbing;
+}
