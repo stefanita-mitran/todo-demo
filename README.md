@@ -25,7 +25,7 @@ todo-app
    cd todo-app
    ```
 
-2. **Install dependencies**:
+<!-- 2. **Install dependencies**:
    Make sure you have Node.js installed. Then run:
    ```bash
    npm install
@@ -41,7 +41,7 @@ todo-app
    To start a local server for development, run:
    ```bash
    npm start
-   ```
+   ``` -->
 
 ## Usage
 
