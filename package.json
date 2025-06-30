@@ -5,7 +5,8 @@
   "main": "src/scripts/main.js",
   "scripts": {
     "build": "tailwindcss build src/style.css -o dist/style.css",
-    "start": "live-server"
+    "start": "live-server",
+    "test": "jest"
   },
   "author": "Your Name",
   "license": "MIT",
@@ -13,6 +14,8 @@
     "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
+    "jest": "^30.0.3",
+    "jsdom": "^26.1.0",
     "live-server": "^1.2.1"
   }
 }

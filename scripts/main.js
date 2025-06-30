@@ -1,10 +1,8 @@
-// This file contains the JavaScript code that handles adding todo items to the list. It listens for input events, updates the DOM, and manages the state of the todo items.
+var todoInput = document.getElementById('todo-input');
+var todoList = document.getElementById('todo-list');
+var addButton = document.getElementById('add-todo');
 
-const todoInput = document.getElementById('todo-input');
-const todoList = document.getElementById('todo-list');
-const addButton = document.getElementById('add-todo');
-
-let todos = [];
+var todos = [];
 
 function renderTodos() {
     todoList.innerHTML = '';
