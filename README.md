@@ -49,8 +49,5 @@ todo-app
 - Use the input field to add new todo items.
 - The list will update dynamically as you add items.
 
-## Future Use Cases
-
-- Implement features such as editing and deleting todo items.
-- Add user authentication to save todos for individual users.
-- Enhance the UI with additional Tailwind CSS components and utilities.
+## View in production 
+https://stefanita-mitran.github.io/todo-demo/
